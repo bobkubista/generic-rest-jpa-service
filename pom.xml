@@ -18,8 +18,72 @@
     <maven>3.0</maven>
   </prerequisites>
 
-
   <modules>
     <module>properties</module>
+    <module>rest-server</module>
+    <module>domain-model</module>
   </modules>
+
+  <dependencyManagement>
+    <dependencies>
+      <!-- BOM -->
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>test-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>apache-commons-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>logging-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>rest-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>persistance-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>validation-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+      <dependency>
+        <groupId>com.bobkubista.parent-pom.dependencies</groupId>
+        <artifactId>javaee-bom</artifactId>
+        <version>${project.version}</version>
+        <type>pom</type>
+        <scope>import</scope>
+      </dependency>
+    </dependencies>
+  </dependencyManagement>
+
+  <dependencies>
+    <!-- logging -->
+    <dependency>
+      <groupId>org.slf4j</groupId>
+      <artifactId>slf4j-api</artifactId>
+    </dependency>
+  </dependencies>
 </project>
