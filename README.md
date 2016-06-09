@@ -1,1 +1,0 @@
-# generic-rest-jpa-service
