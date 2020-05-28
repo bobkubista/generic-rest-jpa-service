@@ -5,7 +5,7 @@
   <packaging>pom</packaging>
 
   <parent>
-    <artifactId>main</artifactId>
+    <artifactId>pa-rest-generic</artifactId>
     <groupId>com.bobkubista</groupId>
     <version>0.0.1-SNAPSHOT</version>
   </parent>
